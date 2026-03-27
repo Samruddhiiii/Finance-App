@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: welthiq-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+
+    # Load all secrets safely (NOT committed to git)
+    env_file:
+      - .env.production
+
+    environment:
+      NODE_ENV: production
+      PORT: 3000

@@ -1,0 +1,10 @@
+{
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "javascript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.tsserver.watchOptions": {
+    "excludeDirectories": ["**/node_modules", "**/.next"]
+  },
+  "javascript.tsserver.watchOptions": {
+    "excludeDirectories": ["**/node_modules", "**/.next"]
+  }
+}

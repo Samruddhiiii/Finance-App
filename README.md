@@ -50,7 +50,6 @@ Minimum required:
 ```bash
 # Database
 DATABASE_URL="postgresql://USER:PASSWORD@HOST:5432/DBNAME"
-DIRECT_URL="postgresql://USER:PASSWORD@HOST:5432/DBNAME"
 
 # Clerk
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="pk_..."
@@ -63,6 +62,9 @@ GEMINI_API_KEY="..."
 Optional (recommended for full functionality):
 
 ```bash
+# Optional direct DB URL for Prisma CLI operations (migrate/introspect)
+DIRECT_URL="postgresql://USER:PASSWORD@HOST:5432/DBNAME"
+
 # Arcjet (security + rate limits)
 ARCJET_KEY="..."
 
